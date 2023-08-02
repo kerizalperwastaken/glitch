@@ -329,7 +329,7 @@ app.get("/auth", async (req, res) => {
   res.redirect("https://discord.com/oauth2/authorized");
 });
 
-app.listen(80); // Local Host Port
+app.listen(3000); // Local Host Port
 
 client.on("clickButton", async (bot, button, userID, guildID) => {
   const member = button.clicker.user.id;
