@@ -1,8 +1,8 @@
 module.exports = {
   prefix: "?", // Your Bot Prefix
   client_id: "1135834067368149143", // Your Application Client ID
-  redirect_uri: "https://verify.k3riz.repl.co/auth", // Your Application Redirect Url
-  oauth_link: "https://discord.com/api/oauth2/authorize?client_id=1135834067368149143&redirect_uri=https%3A%2F%2Fverify.k3riz.repl.co%2Fauth&response_type=code&scope=guilds.join%20identify", // Your Application Auth Link (guild.joins + identify)
+  redirect_uri: process.env.redirect, // Your Application Redirect Url
+  oauth_link: process.env.authlink, // Your Application Auth Link (guild.joins + identify)
   owners: ["1125797410690564187"],
   bot_link: "https://discord.com/api/oauth2/authorize?client_id=1135665819846713384&permissions=8&scope=bot%20applications.commands",
 
